@@ -1,5 +1,7 @@
 <h1>Telegram Image Uploader Bot</h1>
 
+<p align="center"><img src="https://socialify.git.ci/devilxsam/Terabox-Bypaas-Bot/image?font=Source%20Code%20Pro&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Brick%20Wall&amp;theme=Auto" alt="project-image"></p>
+
 <p>This Telegram bot allows users to upload images, which are then automatically uploaded to Te.legra.ph, providing direct links to the uploaded images. The bot also welcomes users with a personalized message and an image when they start a chat.</p>
 
 <h2>Table of Contents</h2>
