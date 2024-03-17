@@ -1,7 +1,5 @@
 <h1>Telegram Image Uploader Bot</h1>
 
-<p align="center"><img src="https://socialify.git.ci/devilxsam/Telegraph_Image_Uploader/image?font=Source%20Code%20Pro&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Brick%20Wall&amp;theme=Auto" alt="project-image"></p>
-
 <p>This Telegram bot allows users to upload images, which are then automatically uploaded to Te.legra.ph, providing direct links to the uploaded images. The bot also welcomes users with a personalized message and an image when they start a chat.</p>
 
 <h2>Table of Contents</h2>
@@ -11,6 +9,7 @@
   <li><a href="#usage">Usage</a></li>
   <li><a href="#features">Features</a></li>
   <li><a href="#dependencies">Dependencies</a></li>
+  <li><a href="#docker">Hosting on VPS with Docker</a></li>
   <li><a href="#contributing">Contributing</a></li>
   <li><a href="#license">License</a></li>
   <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -24,7 +23,7 @@
   <li>Clone this repository to your local machine:</li>
 </ol>
 
-<pre><code>git clone https://github.com/devilxsam/telegram-image-uploader-bot.git
+<pre><code>git clone https://github.com/your-username/telegram-image-uploader-bot.git
 </code></pre>
 
 <ol start="2">
@@ -39,7 +38,7 @@
   <li>Run the bot script:</li>
 </ol>
 
-<pre><code>python main.py
+<pre><code>python bot.py
 </code></pre>
 
 <h2 id="usage">Usage</h2>
@@ -64,6 +63,32 @@
   <li><a href="https://github.com/eternnoir/pyTelegramBotAPI">Telebot</a>: Python library for interacting with the Telegram Bot API.</li>
   <li><a href="https://docs.python-requests.org/en/latest/">Requests</a>: HTTP library for making requests in Python.</li>
 </ul>
+
+<h2 id="docker">Hosting on VPS with Docker</h2>
+
+<p>To host the bot on a VPS using Docker, follow these steps:</p>
+
+<ol>
+  <li>Install Docker on your VPS by following the official documentation for your operating system.</li>
+  <li>SSH into your VPS and clone the bot repository:</li>
+</ol>
+
+<pre><code>git clone https://github.com/your-username/telegram-image-uploader-bot.git
+</code></pre>
+
+<ol start="3">
+  <li>Build the Docker image:</li>
+</ol>
+
+<pre><code>docker build -t telegram-bot .
+</code></pre>
+
+<ol start="4">
+  <li>Run the Docker container:</li>
+</ol>
+
+<pre><code>docker run -d --name telegram-bot-container telegram-bot
+</code></pre>
 
 <h2 id="contributing">Contributing</h2>
 
