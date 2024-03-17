@@ -9,8 +9,8 @@
   <li><a href="#usage">Usage</a></li>
   <li><a href="#features">Features</a></li>
   <li><a href="#dependencies">Dependencies</a></li>
-  <li><a href="#docker">Hosting on VPS with Docker</a></li>
   <li><a href="#heroku">Hosting on Heroku</a></li>
+  <li><a href="#docker">Hosting on VPS with Docker</a></li>
   <li><a href="#contributing">Contributing</a></li>
   <li><a href="#license">License</a></li>
   <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -70,41 +70,40 @@
 <p>To host the bot on Heroku, follow these steps:</p>
 
 <ol>
-  <li>Create a free Heroku account if you don't have one already.</li>
-  <li>Install the Heroku CLI on your local machine by following the official documentation for your operating system.</li>
-  <li>Login to Heroku using the CLI:</li>
+  <li>Create a Heroku account if you don't have one already.</li>
+  <li>Install the Heroku CLI on your machine.</li>
+  <li>Login to Heroku via the CLI using <code>heroku login</code>.</li>
+  <li>Set up your project for deployment (e.g., create a Procfile, requirements.txt, etc.).</li>
+  <li>Push your code to a Heroku Git remote.</li>
+  <li>Scale your app using the Heroku dashboard or CLI.</li>
 </ol>
 
-<pre><code>heroku login
+<p>For detailed instructions, refer to the official <a href="https://devcenter.heroku.com/categories/deployment">Heroku Documentation</a> for deploying and scaling applications.</p>
+
+<h2 id="docker">Hosting on VPS with Docker</h2>
+
+<p>To host the bot on a VPS using Docker, follow these steps:</p>
+
+<ol>
+  <li>Install Docker on your VPS by following the official documentation for your operating system.</li>
+  <li>SSH into your VPS and clone the bot repository:</li>
+</ol>
+
+<pre><code>git clone https://github.com/your-username/telegram-image-uploader-bot.git
+</code></pre>
+
+<ol start="3">
+  <li>Build the Docker image:</li>
+</ol>
+
+<pre><code>docker build -t telegram-bot .
 </code></pre>
 
 <ol start="4">
-  <li>Create a new Heroku app:</li>
+  <li>Run the Docker container:</li>
 </ol>
 
-<pre><code>heroku create your-app-name
-</code></pre>
-
-<ol start="5">
-  <li>Deploy your code to Heroku:</li>
-</ol>
-
-<pre><code>git push heroku main
-</code></pre>
-
-<ol start="6">
-  <li>Set up your Telegram bot token and image path as environment variables on Heroku:</li>
-</ol>
-
-<pre><code>heroku config:set TELEGRAM_BOT_TOKEN=your-bot-token
-heroku config:set IMG_PATH=wlcm.png
-</code></pre>
-
-<ol start="7">
-  <li>Scale your app to at least one dyno:</li>
-</ol>
-
-<pre><code>heroku ps:scale web=1
+<pre><code>docker run -d --name telegram-bot-container telegram-bot
 </code></pre>
 
 <h2 id="contributing">Contributing</h2>
