@@ -20,3 +20,5 @@ To use this bot, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/telegram-image-uploader-bot.git
+
+   Install the required Python libraries:
