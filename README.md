@@ -24,7 +24,7 @@
   <li>Clone this repository to your local machine:</li>
 </ol>
 
-<pre><code>git clone https://github.com/your-username/telegram-image-uploader-bot.git
+<pre><code>git clone https://github.com/devilxsam/telegram-image-uploader-bot.git
 </code></pre>
 
 <ol start="2">
@@ -39,7 +39,7 @@
   <li>Run the bot script:</li>
 </ol>
 
-<pre><code>python bot.py
+<pre><code>python main.py
 </code></pre>
 
 <h2 id="usage">Usage</h2>
